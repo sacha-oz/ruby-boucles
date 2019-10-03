@@ -26,7 +26,22 @@ end
 
 def welcome_screen
     system('clear')
-    puts "Bienvenue dans notre espace secret"
+    i = 1
+    j = 9
+    while i <= 10 do
+        system('clear')
+        print "\n\n     [CONNEXION EN COURS]\n\n["
+        i.times do print "#" end
+        j.times do print " " end
+        print "]\n"
+        i += 1
+        j -= 1
+        sleep 0.1
+	end
+
+	system('say -v Thomas "connexion établie"&')
+	puts "Bienvenue dans notre espace secret"
+
 end 
 
 
